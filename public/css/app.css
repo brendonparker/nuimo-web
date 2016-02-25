@@ -1,0 +1,49 @@
+body {
+    background-color: #FFFFFF;
+}
+        
+.ui.menu .item img.logo {
+    margin-right: 1.5em;
+}
+
+.main.container {
+    margin-top: 7em;
+}
+
+.wireframe {
+    /*margin-top: 2em;*/
+}
+
+.ui.footer.segment {
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
+}
+
+.segment.frame.active {
+    background-color: orange;
+}
+
+.segment.frame.active .image {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
